@@ -17,6 +17,7 @@ Placetobe quote
       }
 
       :host section {
+        display: block;
         padding: calc( var(--placetobe-margin) * 4 ) 0;
         background-color: var(--placetobe-quote-color, var(--placetobe-color-taupe));
         position: relative;
@@ -26,6 +27,7 @@ Placetobe quote
 
       :host main, :host header {
         @apply --placetobe-border-box;
+        display: block;
         max-width: calc( var(--placetobe-layout-width) + (var(--placetobe-margin) * 2) );
         padding: 0 var(--placetobe-margin);
         margin: 0 auto;
@@ -54,9 +56,6 @@ Placetobe quote
         width: 100%;
         height: 100%;
         filter: grayscale(100%);
-      }
-
-      :host main {
       }
 
       :host main article {
